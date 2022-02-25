@@ -1,0 +1,8 @@
+node{
+stage1('Git CheckoutSCM'){
+git 'https://github.com/guru1205/maven-web-application'
+}
+sgate2('Compile-package'){
+sh 'mvn clean package'
+}
+}
